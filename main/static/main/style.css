@@ -1,0 +1,16 @@
+.inner {
+    border: 3px solid green;
+}
+hr {
+    height: 10px;
+    border: 1px solid black;
+    background: black;
+}
+
+.warning-msg {
+    color: red;
+}
+
+.coral {
+    color: coral;
+}

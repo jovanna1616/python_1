@@ -1,0 +1,17 @@
+
+{% extends "main/header.html" %}
+{% block content %}
+<div class="rows">
+    {% for tutorial in tutorials %}
+        <div class="col s12 m6 l4">
+            <div class="card blue-gray darken-1">
+                <div class="card-content">
+                    <span class="card-title">{{tutorial.tutorial_title}}</span>
+                    <p>{{tutorial.tutorial_content}}</p>
+                    <p>{{tutorial.tutorial_published}}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

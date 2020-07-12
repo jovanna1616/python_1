@@ -1,0 +1,21 @@
+<head lang="en">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    {% include "main/includes/navbar.html" %}
+    {% include "main/includes/error-messages.html" %}
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+</body>
+
+<script src="{% static 'main/js/app.js' %}"></script>
